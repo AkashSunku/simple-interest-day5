@@ -10,26 +10,25 @@ body{
   height: 100%
 
 }
-h2{
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  color: #fff;
-  margin: 40px;
+
+h3{
+    text-align: center;
+    padding: 15px;
+      font-weight: bold;
+      color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
-.box{
+
+.card{
   background-color: black;
-  width: 20%;
-  height: 50vh;
-  margin: 0 40%;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px black,-3px -3px 10px black;
-  transition: 0.4s ease-in;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 350px;
+    text-align: center;
+border-radius: 30px;
+height: 650px;
 }
-.box:hover{
-  transform: translateY(-10px);
-}
-label{
+.fo{
   font-weight: bold;
   font-size: 20px;
   color: #fff;
@@ -47,6 +46,16 @@ input[type="number"]{
   border-bottom:  2px solid white;
   border-radius:20px;
 }
+
+p{
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+color: #fff;
+margin-top: 20px;
+
+}
+
 button{
   width: 60%;
   padding: 3px;
@@ -56,11 +65,14 @@ color: #fff;
 margin:10px 50px;
 border-radius: 20px;
 }
-p{
-text-align: center;
-font-weight: bold;
-font-size: 20px;
-color: #fff;
-margin-top: 20px;
 
+@media screen and (max-width:500px) {
+    .container{
+        width: 80%;
+        justify-content: center;
+    }
+
+    .input{
+        width: 80%;
+    }
 }

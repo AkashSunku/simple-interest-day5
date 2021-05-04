@@ -1,42 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="css/styles.css">
-    <title>Simple Interest</title>
+<html>
+    <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Interest Calculator</title>
+        <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+        />
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous">
+        </script>
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+        crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="container">
+            <div class="row">
+                <div class=" card col-md-6 offset-md-3"style="overflow-y: auto;">
+                    <h3><b>Simple Interest Calculator</b></h3><br>
 
-  </head>
-  <body>
-    <h2>Calculate Interest</h2>
-    <div class="box">
-      <label>principle: </label><br>
-      <input type="number" id="p" placeholder="Enter Principal Amount"><br>
-      <label>Rate : </label><br>
-      <input type="number" id="r" placeholder="Rate Of interest"><br>
-      <label>time : </label><br>
-      <input type="number" id="t" placeholder="Enter Time in years"><br>
-
-      <button onclick="Calculate()">Calculate Interest</button>
-      <p id="demo"></p>
-
-    </div>
-    <script>
-
-      function Calculate(){
-         p= document.getElementById("p").value;
-
-         r= document.getElementById("r").value;
-
-         t= document.getElementById("t").value;
-         result = (p*t*r)/100;
-
-        document.getElementById("demo").innerHTML= "The Interest is: " + result;
-      }
-
-    </script>
 
 
-  </body>
+                    <div class="calculator">
+                      <label class="fo">Principle: </label><br>
+                      <input type="number" id="p" placeholder="Enter Principal Amount"><br>
+                      <label class="fo">Rate : </label><br>
+                      <input type="number" id="r" placeholder="Rate Of interest"><br>
+                      <label class="fo">Time : </label><br>
+                      <input type="number" id="t" placeholder="Enter Time in years"><br>
 
+                      <button onclick="Calculate()">Calculate Interest</button>
+                      <p id="demo"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
 </html>

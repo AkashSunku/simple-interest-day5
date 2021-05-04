@@ -6,5 +6,5 @@ function Calculate(){
    t= document.getElementById("t").value;
    result = (p*t*r)/100;
 
-  document.getElementById("demo").innerHTML= "The Interest is: " + result;
+  document.getElementById("demo").innerHTML= "The Interest is:₹ " + result;
 }

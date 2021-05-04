@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/styles.css">
+    <title>Simple Interest</title>
+
+  </head>
+  <body>
+    <h2>Calculate Interest</h2>
+    <div class="box">
+      <label>principle: </label><br>
+      <input type="number" id="p" placeholder="Enter Principal Amount"><br>
+      <label>Rate : </label><br>
+      <input type="number" id="r" placeholder="Rate Of interest"><br>
+      <label>time : </label><br>
+      <input type="number" id="t" placeholder="Enter Time in years"><br>
+
+      <button onclick="Calculate()">Calculate Interest</button>
+      <p id="demo"></p>
+
+    </div>
+    <script>
+
+      function Calculate(){
+         p= document.getElementById("p").value;
+
+         r= document.getElementById("r").value;
+
+         t= document.getElementById("t").value;
+         result = (p*t*r)/100;
+
+        document.getElementById("demo").innerHTML= "The Interest is: " + result;
+      }
+
+    </script>
+
+
+  </body>
+
+</html>
